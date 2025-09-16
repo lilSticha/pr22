@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота - GNU/Linux</title>
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#info">Коротка інформація</a>
+            <a href="#distros">Популярні дистрибутиви</a>
+            <a href="#commands">Приклад команд</a>
+            <a href="#bash">BASH-скрипт</a>
+            <a href="#sources">Джерела інформації</a>
+        </nav>
+    </header>
+
+    <!-- 1. Коротка інформація -->
+    <section id="info">
+        <h1>Коротка інформація про GNU/Linux</h1>
+        <p><strong>GNU/Linux</strong> — це вільна й відкрита операційна система, яка складається з ядра Linux та набору утиліт GNU. 
+        Вона є популярною завдяки своїй безпеці, стабільності та можливості безкоштовного використання. 
+        Linux використовується на серверах, у суперкомп’ютерах, смартфонах (Android) та вбудованих системах.</p>
+        <p>Основні переваги GNU/Linux:</p>
+        <ul>
+            <li>Відкритий вихідний код (Open Source);</li>
+            <li>Висока стабільність та безпека;</li>
+            <li>Великий вибір безкоштовних дистрибутивів;</li>
+            <li>Активна спільнота користувачів та розробників.</li>
+        </ul>
+    </section>
+
+    <!-- 2. Популярні дистрибутиви -->
+    <section id="distros">
+        <h1>Найбільш популярні дистрибутиви GNU/Linux</h1>
+
+        <div class="distro">
+            <h2>Ubuntu</h2>
+            <p>Один з найпопулярніших дистрибутивів, простий у використанні. Підходить для початківців. 
+            Має зручний графічний інтерфейс та величезну спільноту.</p>
+        </div>
+
+        <div class="distro">
+            <h2>Debian</h2>
+            <p>Стабільний і надійний дистрибутив, на якому базується Ubuntu. 
+            Часто використовується на серверах.</p>
+        </div>
+
+        <div class="distro">
+            <h2>Fedora</h2>
+            <p>Офіційно підтримується Red Hat. Часто використовується розробниками, 
+            оскільки містить найновіші пакети та технології.</p>
+        </div>
+
+        <div class="distro">
+            <h2>Arch Linux</h2>
+            <p>Дистрибутив для досвідчених користувачів. Дає можливість гнучкого налаштування системи 
+            з нуля. Має велику документацію (Arch Wiki).</p>
+        </div>
+
+        <div class="distro">
+            <h2>Linux Mint</h2>
+            <p>Зручний дистрибутив, схожий на Windows за інтерфейсом. 
+            Ідеальний варіант для переходу з Windows на Linux.</p>
+        </div>
+    </section>
+
+<!-- 3. Приклади команд роботи в Linux CLI -->
+<section id="commands">
+    <h1>Приклади команд роботи в Linux CLI</h1>
+    <p>Нижче наведено приклади базових команд Linux, які використовуються в терміналі.</p>
+
+    <div class="command">
+        <h2>pwd</h2>
+        <p>Виводить поточний робочий каталог.</p>
+        <pre><code class="bash">pwd
+# /home/user</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>echo</h2>
+        <p>Виводить текст у термінал.</p>
+        <pre><code class="bash">echo "Привіт, Linux!"
+# Привіт, Linux!</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>ls</h2>
+        <p>Показує список файлів та папок у поточному каталозі.</p>
+        <pre><code class="bash">ls
+# Desktop  Documents  Downloads  script.sh</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>cd</h2>
+        <p>Змінює поточний каталог.</p>
+        <pre><code class="bash">cd /home/user/Documents
+# Тепер поточний каталог: /home/user/Documents</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>touch</h2>
+        <p>Створює порожній файл.</p>
+        <pre><code class="bash">touch newfile.txt
+# Створено файл newfile.txt</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>mkdir</h2>
+        <p>Створює нову директорію (папку).</p>
+        <pre><code class="bash">mkdir my_folder
+# Створено каталог my_folder</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>cp</h2>
+        <p>Копіює файли або каталоги.</p>
+        <pre><code class="bash">cp file.txt my_folder/
+# Скопійовано file.txt у my_folder/</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>mv</h2>
+        <p>Переміщує або перейменовує файли.</p>
+        <pre><code class="bash">mv oldname.txt newname.txt
+# oldname.txt перейменовано на newname.txt</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>rm</h2>
+        <p>Видаляє файли.</p>
+        <pre><code class="bash">rm unwanted.txt
+# Файл unwanted.txt видалено</code></pre>
+    </div>
+
+    <div class="command">
+        <h2>history</h2>
+        <p>Показує історію виконаних команд у терміналі.</p>
+        <pre><code class="bash">history
+# 1  pwd
+# 2  ls
+# 3  cd Documents</code></pre>
+    </div>
+
+</section>
+
+
+
+
+<!-- 4. BASH-скрипт (імітація авторизації) -->
+<section id="bash">
+    <h1>BASH-скрипт: імітація авторизації (текстовий режим)</h1>
+    <p>Нижче — приклад простого bash-скрипта, який імітує процес входу: запитує логін та пароль, приховує введення пароля, дозволяє кілька спроб та виводить повідомлення про успіх або помилку.</p>
+   <img class="imgscript"src="photo/bashscript.png" alt="Приклад виконання команди history"> 
+    <pre><code class="bash">
+
+    </code></pre>
+</section>
+
+
+<section id="sources">
+  <h2>Джерела інформації по темі</h2>
+  <ul>
+    <li><a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank">GNU Bash Manual</a> – офіційна документація Bash.</li>
+    <li><a href="https://linuxize.com/" target="_blank">Linuxize</a> – покрокові статті по Bash та Linux CLI.</li>
+    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> – відповіді на практичні питання по Bash та Linux.</li>
+  </ul>
+  <p><strong>Linux – найкраща ОС!</strong></p>
+</section>
+<footer style="text-align: center; padding: 20px; background-color: #f0f0f0;">
+  <p>Розроблено студентом 2-КТ-22 Стичуком Іван</p>
+</footer>
+
+</body>
+</html>

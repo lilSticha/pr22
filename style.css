@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+/* Стиль для дистрибутивів */
+.distro {
+    margin-bottom: 20px;
+}
+
+.distro h2 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.distro-img {
+    max-width: 150px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.imgscript{
+    width: 800px;
+    height: 500px;
+}
